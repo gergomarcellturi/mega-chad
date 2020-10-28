@@ -1,1 +1,10 @@
+<label>
+  <input [(ngModel)]="text">
+</label>
+<button (click)="sendMessage()">send</button>
+
+<div *ngFor="let message of messages">
+  [{{message.timestamp?.seconds * 1000 | date: 'yyyy.MM.dd hh:mm:ss'}}] {{message.from}}: {{message.text}}
+</div>
+
 <router-outlet></router-outlet>

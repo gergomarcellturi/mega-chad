@@ -1,29 +1,41 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {environment} from '../environments/environment';
-import {FirebaseApp} from '@angular/fire';
-import {AngularFireDatabase} from '@angular/fire/database';
 import {Observable} from 'rxjs';
-import {User} from './api/dto/User';
-import {AngularFirestore} from '@angular/fire/firestore';
+import {User} from './api/interfaces/User';
+import {ChatService} from './api/services/communication/chat.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'mega-chad';
 
   public chat: Observable<User[]>;
   public users: Observable<User[]>;
+  public text: string;
+  public messages: {text: string, from: string, timestamp: {seconds: number, nanoseconds: number}}[];
 
   constructor(
     private translate: TranslateService,
-    private firebase: FirebaseApp,
-    private database: AngularFireDatabase,
-    private db: AngularFirestore
+    public chatService: ChatService,
   ) {
     translate.use(environment.defaultLang);
+    this.chatService.getChatLists().subscribe(response => {
+      this.messages = response[0].messages;
+      console.log(this.messages[3].timestamp);
+    });
+  }
+
+  async ngOnInit() {
+  }
+
+  public sendMessage = (): void => {
+    if (!this.text) return;
+
+    this.chatService.sendMessage(this.text, '1uFaAU4p6ElQ3vEIkuAA');
+    this.text = '';
   }
 }

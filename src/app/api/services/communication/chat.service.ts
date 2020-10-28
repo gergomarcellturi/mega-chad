@@ -35,6 +35,7 @@ export class ChatService {
     this.authenticationService.user$.subscribe(user => {
       console.log(user);
       const data = {
+        uid: user.uid,
         from: user.displayName,
         text,
         timestamp: new Date(),

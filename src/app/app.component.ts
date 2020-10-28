@@ -4,6 +4,7 @@ import {environment} from '../environments/environment';
 import {Observable} from 'rxjs';
 import {User} from './api/interfaces/User';
 import {ChatService} from './api/services/communication/chat.service';
+import {AuthenticationService} from './api/services/misc/authentication.service';
 
 @Component({
   selector: 'app-root',
@@ -16,9 +17,10 @@ export class AppComponent implements OnInit {
   public chat: Observable<User[]>;
   public users: Observable<User[]>;
   public text: string;
-  public messages: {text: string, from: string, timestamp: {seconds: number, nanoseconds: number}}[];
+  public messages: {text: string, uid: string, from: string, timestamp: {seconds: number, nanoseconds: number}}[];
 
   constructor(
+    public authenticationService: AuthenticationService,
     private translate: TranslateService,
     public chatService: ChatService,
   ) {
@@ -33,9 +35,14 @@ export class AppComponent implements OnInit {
   }
 
   public sendMessage = (): void => {
+    console.log(this.text);
     if (!this.text) return;
 
     this.chatService.sendMessage(this.text, '1uFaAU4p6ElQ3vEIkuAA');
     this.text = '';
+  }
+
+  public isSamePerson = () => {
+
   }
 }

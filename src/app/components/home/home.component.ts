@@ -54,4 +54,8 @@ export class HomeComponent implements OnInit {
       this.sendMessage();
     }
   }
+
+  public showMessageSender(index: number): boolean {
+    return index > 0 ? this.messages[index].uid !== this.messages[index - 1].uid : true;
+  }
 }

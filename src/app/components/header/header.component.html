@@ -18,11 +18,11 @@
 </mat-toolbar>
 
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>
+  <button (click)="goToRoute('profile')" mat-menu-item>
     <mat-icon>person</mat-icon>
     <span>Profile</span>
   </button>
-  <button mat-menu-item>
+  <button (click)="goToRoute('preferences')" mat-menu-item>
     <mat-icon>settings</mat-icon>
     <span>Preferences</span>
   </button>

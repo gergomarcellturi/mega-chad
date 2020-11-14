@@ -42,4 +42,77 @@ Turi Marcell Gergő (fejlesztő)
 
 ## Wireframe
 
+![A diagram.](./images/b.png)
 
+![A diagram.](./images/c.png)
+
+![A diagram.](./images/d.png)
+
+## Rendszer célja
+
+A rendszer célja, hogy egy egységes felületet biztosítson a cég emberei számára a kommunikáció elvégzéséhez.
+
+A legfőbb cél, hogy az alkalmazás különböző fajta eszközökön is működjön, reszponzív design alkalmazásával.
+
+Web eszközök használata szükséges: HTML, CSS.
+
+Emoji karakterek implementálása és könnyű hozzáférése
+
+A felhasználói felület, illetve a megjelenés legyen testreszabható, ezzel hatékonyabbá téve az egyes részlegeken dolgozók munkáját.
+ 
+A felületnek egyszerünek és kezelhetőnek kell lennie, hogy mindenki könnyen tudja használni. 
+
+A rendszernek célja, hogy ne kelljen third-party szoftvereket használni cégen belüli digitális üzenetváltásokhoz.
+
+## Fizikai környezet
+
+#### Angular Frontend
+
+Visual Studio Code
+
+Intellij Idea
+
+Sublime Text
+
+Notepad++
+
+#### Fejlesztő eszközök
+HTML
+
+CSS
+
+TS
+
+#### Böngészők:
+
+Firefox
+
+Google Chrome
+
+Opera
+
+## Tesztterv
+
+Külső megjelenés tesztelése.
+
+Adatbázis elérhetőségének tesztelése.
+
+Adatbázisműveletek indítása frontend oldalról.
+
+Autentikáció tesztelése
+
+Üzenetek automatikus frissülése.
+
+## Telepítési terv
+
+A program nem kíván telepítést, mivel egy weboldal ezt pedig a programozó cég rendszergazdája üzemeli egy szerven.
+
+## Karbantartási terv
+
+Tudjuk, hogy az informatika egy folyamatosan újulásban lévő iparág, fontosnak tartjuk, hogy naprakészek maradjunk a technológiákkal kapcsolatban.
+ 
+A weblapunkat átadás után is karbantartjuk, illetve korszerűsítjük is időközönként.
+
+Havi updateket tervezünk a weboldal számára.
+
+A jövőben szeretnénk évszakhoz vagy esetleg egyes ünnepekhez külőn dizájnt is fejleszteni.

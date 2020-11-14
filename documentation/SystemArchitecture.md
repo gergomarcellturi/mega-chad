@@ -16,7 +16,7 @@ Nem célja a webapplikációnak új szintre emelni a valós idejű üzenetvált�
 Csak és kizárólag belső céges szoftver.
 
 ## Rendszer használati esetei, lefutásaik ábra
-![A diagram.](./images/a.png)
+![A diagram.](images.png)
 
 ## Tervek
 
@@ -42,11 +42,11 @@ Turi Marcell Gergő (fejlesztő)
 
 ## Wireframe
 
-![A diagram.](./images/b.png)
+![A diagram.](images.png)
 
-![A diagram.](./images/c.png)
+![A diagram.](images.png)
 
-![A diagram.](./images/d.png)
+![A diagram.](images.png)
 
 ## Rendszer célja
 

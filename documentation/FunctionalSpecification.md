@@ -104,15 +104,15 @@ A szabvány elismert szervezet által alkotott vagy jóváhagyott, közmegegyez�
     - Üzenetek automatikus frissítése
 
 ## 8. Használati esetek
-![A diagram.](./images/f.png)
+![A diagram.](images.png)
 
 ## 9. Képernyő tervek
 
-![A diagram.](./images/b.png)
+![A diagram.](images.png)
 
-![A diagram.](./images/c.png)
+![A diagram.](images.png)
 
-![A diagram.](./images/d.png)
+![A diagram.](images.png)
 
 ## 10. Forgatókönyvek
 

@@ -49,7 +49,7 @@ A szabvány elismert szervezet által alkotott vagy jóváhagyott, közmegegyez�
 
 ## 5 Jelenlegi üzleti folyamatok modellje
 
-5.1 Számolási müveletek: 
+5.1 Üzenetküldési müveletek: 
 
 5.1.1 Üzenetküldési vagy fogadási igény => online webapplikáció megnyitása => üzenet küldése vagy fogadása
 
@@ -95,7 +95,7 @@ A szabvány elismert szervezet által alkotott vagy jóváhagyott, közmegegyez�
 
 #### Hogyan használható az online chat?
 
-Pontosan úgy, ahogy egy chatapplikációban általában.
+ Pontosan úgy, ahogy egy chatapplikációban általában.
 
  Egyszerűen gépeld be az üzenetet, majd kattints az küldés gombra.
  
